@@ -11,6 +11,7 @@
     </form> 
     </section>
 
-<section class="results"> 
-<app-housinglocation [housingLocation] = "housingLocation"></app-housinglocation> 
-</section>
+    <section class="results"> 
+        @for (housingLocation of housingLocationList; track housingLocation){ 
+        <app-housinglocation [housingLocation]="housingLocation" ></app-housinglocation> } 
+      </section> 
